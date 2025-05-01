@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SOUL AGENCY - Веб-студия полного цикла</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header class="header">
+    <div class="logo">SOUL AGENCY</div>
+    <nav class="nav">
+        <a href="#home" class="nav-link">
+            <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00ffb2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 12L12 3l9 9"/>
+                <path d="M9 21V12h6v9"/>
+            </svg>
+            Домой
+        </a>
+        <a href="#portfolio" class="nav-link">
+            <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff3cac" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 7l9-4 9 4v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <path d="M9 21V9h6v12"/>
+            </svg>
+            Наши работы
+        </a>
+        <a href="#about" class="nav-link">
+            <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00ffb2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="16" x2="12" y2="12"/>
+                <line x1="12" y1="8" x2="12.01" y2="8"/>
+            </svg>
+            О компании
+        </a>
+        <a href="#blog" class="nav-link">
+            <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff3cac" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            Блог
+        </a>
+        <a href="#contacts" class="nav-link">
+            <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00ffb2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h4.09a2 2 0 0 1 2 1.72c.13 1.21.35 2.39.67 3.54a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.15.32 2.33.54 3.54.67a2 2 0 0 1 1.72 2z"/>
+            </svg>
+            Контакты
+        </a>
+    </nav>
+    <div class="header-actions">
+        <button class="cta order-same" id="btnOrderSame">Заказать такой же</button>
+        <button class="cta order-better" id="btnOrderBetter">Заказать ещё лучше чем этот</button>
+    </div>
+</header>
+
+<main>
+
+    <section id="home" class="section">
+        <div class="slider-container">
+            <button class="slider-arrow left" aria-label="Предыдущий слайд">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"/>
+                </svg>
+            </button>
+            <div class="slide-content" aria-live="polite" aria-atomic="true"></div>
+            <button class="slider-arrow right" aria-label="Следующий слайд">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 6 15 12 9 18"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2 class="section-title">Наши работы</h2>
+        <table class="portfolio-table">
+            <thead>
+            <tr><th>Проект</th><th>Превью</th></tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a href="https://example.com/corporate" target="_blank" rel="noopener">Корпоративный сайт</a></td>
+                <td><img src="img/corporate.jpg" alt="Корпоративный сайт" class="thumb" /></td>
+            </tr>
+            <tr>
+                <td><a href="https://example.com/ecommerce" target="_blank" rel="noopener">Интернет-магазин</a></td>
+                <td><img src="img/ecommerce.jpg" alt="Интернет-магазин" class="thumb" /></td>
+            </tr>
+            <tr>
+                <td><a href="https://example.com/landing" target="_blank" rel="noopener">Лендинг продукта</a></td>
+                <td><img src="img/landing.jpg" alt="Лендинг продукта" class="thumb" /></td>
+            </tr>
+            <tr>
+                <td><a href="https://example.com/portfolio" target="_blank" rel="noopener">Портфолио</a></td>
+                <td><img src="img/portfolio.jpg" alt="Портфолио" class="thumb" /></td>
+            </tr>
+            <tr>
+                <td><a href="https://example.com/mobileapp" target="_blank" rel="noopener">Мобильное приложение</a></td>
+                <td><img src="img/mobileapp.jpg" alt="Мобильное приложение" class="thumb" /></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title">О компании</h2>
+        <div class="team-list">
+            <article class="team-member">
+                <img src="img/team/team1.jpg" alt="Иван Иванов" class="team-photo" />
+                <h3>Иван Иванов</h3>
+                <p>Руководитель проекта с 10-летним опытом в веб-разработке и дизайне.</p>
+            </article>
+            <article class="team-member">
+                <img src="img/team/team2.jpg" alt="Мария Петрова" class="team-photo" />
+                <h3>Мария Петрова</h3>
+                <p>Ведущий дизайнер, специалист по UI/UX и анимациям.</p>
+            </article>
+            <article class="team-member">
+                <img src="img/team/team3.jpg" alt="Алексей Смирнов" class="team-photo" />
+                <h3>Алексей Смирнов</h3>
+                <p>Senior Frontend разработчик, эксперт по React и Vue.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="blog" class="section">
+        <h2 class="section-title">Блог</h2>
+        <ul class="blog-list">
+            <li><time datetime="2025-04-25">25 апреля 2025</time> - <a href="#">Как создать современный лендинг</a></li>
+            <li><time datetime="2025-04-20">20 апреля 2025</time> - <a href="#">Тренды веб-дизайна 2025</a></li>
+            <li><time datetime="2025-04-15">15 апреля 2025</time> - <a href="#">SEO для корпоративных сайтов</a></li>
+            <li><time datetime="2025-04-10">10 апреля 2025</time> - <a href="#">Почему важен UI/UX дизайн</a></li>
+            <li><time datetime="2025-04-05">5 апреля 2025</time> - <a href="#">Интеграция CRM с сайтом</a></li>
+            <li><time datetime="2025-04-01">1 апреля 2025</time> - <a href="#">Мобильные приложения: с чего начать</a></li>
+            <li><time datetime="2025-03-25">25 марта 2025</time> - <a href="#">Аналитика и оптимизация сайтов</a></li>
+            <li><time datetime="2025-03-20">20 марта 2025</time> - <a href="#">Выбор CMS для интернет-магазина</a></li>
+            <li><time datetime="2025-03-15">15 марта 2025</time> - <a href="#">Кейс: редизайн корпоративного сайта</a></li>
+            <li><time datetime="2025-03-10">10 марта 2025</time> - <a href="#">Как повысить конверсию лендинга</a></li>
+        </ul>
+    </section>
+
+    <section id="contacts" class="section">
+        <h2 class="section-title">Контакты</h2>
+        <p>Свяжитесь с нами по телефону: +7 (999) 123-45-67</p>
+        <p>Email: info@soulagency.ru</p>
+        <p>Адрес: г. Москва, ул. Примерная, д. 1</p>
+    </section>
+
+</main>
+
+<!-- Панель заявки -->
+<aside class="order-panel" id="orderPanel" aria-hidden="true">
+    <button class="close-btn" id="closePanel" aria-label="Закрыть форму">&times;</button>
+    <h2>Оставьте заявку</h2>
+    <form id="orderForm" novalidate>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required placeholder="Введите имя" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Введите email" />
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Введите телефон" />
+
+        <button type="submit" class="submit-btn">Отправить</button>
+    </form>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+
+<script>
+    // Слайдер
+    const slides = [
+        {
+            img: "img/corporate.jpg",
+            title: "Корпоративный сайт",
+            text: "Современные решения для бизнеса: презентация компании, услуги, интеграции, SEO."
+        },
+        {
+            img: "img/ecommerce.jpg",
+            title: "Интернет-магазин",
+            text: "Полноценные e-commerce платформы: каталог, корзина, оплата, CRM, аналитика."
+        },
+        {
+            img: "img/landing.jpg",
+            title: "Лендинг продукта",
+            text: "Высококонверсионные лендинги с ярким дизайном и мощными call-to-action."
+        },
+        {
+            img: "img/portfolio.jpg",
+            title: "Портфолио",
+            text: "Покажите ваши лучшие проекты - стильная галерея с фильтрами и анимациями."
+        },
+        {
+            img: "img/mobileapp.jpg",
+            title: "Мобильное приложение",
+            text: "UI/UX дизайн и разработка мобильных приложений под любые задачи и платформы."
+        }
+    ];
+
+    let current = 0;
+    const slideContent = document.querySelector('.slide-content');
+    const leftBtn = document.querySelector('.slider-arrow.left');
+    const rightBtn = document.querySelector('.slider-arrow.right');
+
+    function showSlide(idx) {
+        const slide = slides[idx];
+        slideContent.innerHTML = `
+      <div class="slide fullscreen" role="group" aria-label="Слайд ${idx + 1} из ${slides.length}">
+        <img src="${slide.img}" alt="${slide.title}" />
+        <div class="slide-caption">
+          <h2>${slide.title}</h2>
+          <p>${slide.text}</p>
+        </div>
+      </div>
+      <div class="slider-indicator">${idx + 1} / ${slides.length}</div>
+    `;
+    }
+
+    showSlide(current);
+
+    leftBtn.addEventListener('click', () => {
+        current = (current - 1 + slides.length) % slides.length;
+        showSlide(current);
+    });
+
+    rightBtn.addEventListener('click', () => {
+        current = (current + 1) % slides.length;
+        showSlide(current);
+    });
+
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowLeft') leftBtn.click();
+        if (e.key === 'ArrowRight') rightBtn.click();
+    });
+
+    // Панель заказа
+    const btnOrderSame = document.getElementById('btnOrderSame');
+    const btnOrderBetter = document.getElementById('btnOrderBetter');
+    const orderPanel = document.getElementById('orderPanel');
+    const closePanel = document.getElementById('closePanel');
+    const overlay = document.getElementById('overlay');
+
+    function openPanel() {
+        orderPanel.classList.add('active');
+        overlay.classList.add('active');
+        orderPanel.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closePanelFunc() {
+        orderPanel.classList.remove('active');
+        overlay.classList.remove('active');
+        orderPanel.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    btnOrderSame.addEventListener('click', openPanel);
+    btnOrderBetter.addEventListener('click', openPanel);
+    closePanel.addEventListener('click', closePanelFunc);
+    overlay.addEventListener('click', closePanelFunc);
+
+    // Обработка отправки формы
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Спасибо за заявку, мы свяжемся с вами!');
+        closePanelFunc();
+        this.reset();
+    });
+
+    // Плавная прокрутка к секциям
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+                e.preventDefault();
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
